@@ -1,0 +1,10 @@
+sentence = input('Enter a sentence :\n')
+letters = list(sentence)
+number_of_letter= {}
+for i in letters:
+    key=number_of_letter.keys()
+    if i in key:
+        number_of_letter[i] += 1
+    else:
+        number_of_letter[i] = 1
+print(number_of_letter)
